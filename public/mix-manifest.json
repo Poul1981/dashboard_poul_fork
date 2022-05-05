@@ -1,5 +1,12 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/users.js": "/js/users.js",
+    "/js/adminlte.min.js": "/js/adminlte.min.js",
+    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/myScripts.js": "/js/myScripts.js",
+    "/css/mystyle.css": "/css/mystyle.css",
+    "/css/fontawesome.css": "/css/fontawesome.css",
+    "/css/adminlte.min.css": "/css/adminlte.min.css",
     "/css/app.css": "/css/app.css"
 }

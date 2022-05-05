@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\SearchController;
 use App\Http\Livewire\Search;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,19 @@ use App\Http\Livewire\Search;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Route::get('/test', function(){//проба пера
+//    return view('test');
+//})->name('test');
+
+Route::get('/test', 'App\Http\Controllers\TestController@test')->name('test');
+
+//вставка дашборда через контроллер
+Route::get('/dashboard', 'App\Http\Controllers\DashBoardController@showDash')->name('dash');
+
+//Route::get('/dashboard', function(){//вставляем дашбоард
+//    return view('dashboard');
+//})->name('dash');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
