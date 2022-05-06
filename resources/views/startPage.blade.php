@@ -18,7 +18,8 @@
 {{--    </div>--}}
 <section class="head-section">
     <div class="container">
-        <header class="home-header d-flex justify-content-center py-3">
+        <header class="home-header d-flex py-3">
+            <div><span class="fs-4">Laravel projeckt</span></div>
             <ul class="nav nav-pills">
                 <li class="nav-item start-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item start-item"><a href="{{route('dash')}}" class="nav-link">ИнфоБелГУ</a></li>
@@ -27,6 +28,7 @@
                 <li class="nav-item start-item"><a href="#" class="nav-link">About</a></li>
             </ul>
         </header>
+        <hr>
     </div>
 </section>
 

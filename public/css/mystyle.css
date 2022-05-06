@@ -30,11 +30,11 @@ ul.img-text li{
     margin: 0 auto;
 }
 .head-section{
-    background-color: #f3ca88;
+    /*background-color: #f3ca88;*/
     width: 100%;
 }
 .start-item{
-    background-color: #6ebd6c;
+    background-color: #7bb6bd;
     margin-right: 5px;
     border-radius: 5px;
 }
@@ -52,5 +52,17 @@ ul.img-text li{
 .nav-pills li{
     margin-bottom: 10px;
 }
+.d-flex {
+    justify-content: space-between;
+    align-items: center
+}
 
+.fs-4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    border: 2px outset rgb(239, 18, 206);
+    transform: skewX(-15deg);
+}
 
