@@ -23,6 +23,6 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/myScripts.js','public/js')
     //css для дашборда
     .css('resources/css/adminlte.min.css', 'public/css')
-    .css('resources/css/all.min.css', 'public/css')
+    // .css('resources/css/all.min.css', 'public/css')
     .css('resources/css/fontawesome.css', 'public/css')
     .css('resources/css/mystyle.css', 'public/css');

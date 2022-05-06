@@ -19,3 +19,37 @@ ul.img-text li{
     list-style: none;
     margin-bottom: 5px;
 }
+
+.infobelgu{
+    /*width: 100px;*/
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #00a87d;
+    color: white;
+    margin: 0 auto;
+}
+.head-section{
+    background-color: #f3ca88;
+    width: 100%;
+}
+.start-item{
+    background-color: #6ebd6c;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.start-item .nav-link{
+    color: black;
+    /*font-weight: bold;*/
+}
+.start-item:hover a{
+    color: #bd2130;
+}
+.nav-pills{
+    justify-content: center;
+}
+.nav-pills li{
+    margin-bottom: 10px;
+}
+

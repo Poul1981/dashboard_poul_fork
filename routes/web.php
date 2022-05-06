@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchController;
 use App\Http\Livewire\Search;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\DashBoardController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\StartController;
+;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,24 +21,20 @@ use App\Http\Controllers\TestController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//стартовая страница ларавеля
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-//Route::get('/test', function(){//проба пера
-//    return view('test');
-//})->name('test');
+//моя стартовая страница
+Route::get('/', [StartController::class, 'start'])->name('start');
 
 Route::get('/test', 'App\Http\Controllers\TestController@test')->name('test');
 
 //вставка дашборда через контроллер
-Route::get('/dashboard', 'App\Http\Controllers\DashBoardController@showDash')->name('dash');
+Route::get('/dashboard', [DashBoardController::class, 'showDash'])->name('dash');
 
-//Route::get('/dashboard', function(){//вставляем дашбоард
-//    return view('dashboard');
-//})->name('dash');
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::resource('marksheet', \App\Http\Controllers\StudentController::class);
 
